@@ -12,10 +12,10 @@ export default function Hero() {
           <h1>Tu auto en manos<br /><span>de expertos.</span></h1>
           <p className="lead">
             Mantención, diagnóstico y reparación con la precisión de un equipo de carrera.
-            Agenda tu hora en línea en menos de un minuto.
+            Agenda tu hora directamente por WhatsApp.
           </p>
           <div className="hero__cta">
-            <a href="#agenda" className="btn btn--red">Agendar hora</a>
+            <a href={waLink('Hola, quisiera agendar una hora.')} target="_blank" rel="noopener noreferrer" className="btn btn--red">Agendar hora</a>
             <a href={waLink('Hola, quisiera hacer una consulta.')} target="_blank" rel="noopener noreferrer" className="btn btn--ghost">
               Escríbenos por WhatsApp
             </a>

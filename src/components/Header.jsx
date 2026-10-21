@@ -1,10 +1,12 @@
 import { useState } from 'react';
 import { waLink } from '../config.js';
 
+const AGENDA_LINK = waLink('Hola, quisiera agendar una hora.');
+
 const LINKS = [
   ['#servicios', 'Servicios'],
   ['#trabajos', 'Trabajos'],
-  [waLink('Hola, quisiera agendar una hora.'), 'Agenda', true],
+  [AGENDA_LINK, 'Agenda', true],
   ['#opiniones', 'Opiniones'],
   ['#contacto', 'Contacto'],
 ];
@@ -39,7 +41,7 @@ export default function Header() {
               {label}
             </a>
           ))}
-          <a href="#agenda" className="btn btn--red btn--sm" onClick={close}>Agendar hora</a>
+          <a href={AGENDA_LINK} target="_blank" rel="noopener noreferrer" className="btn btn--red btn--sm" onClick={close}>Agendar hora</a>
         </nav>
       </div>
     </header>

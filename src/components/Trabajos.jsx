@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { STATS, TRABAJOS } from '../data/trabajos.js';
+import { waLink } from '../config.js';
 
 const ALL = 'Todos';
 const CATEGORIES = [ALL, ...new Set(TRABAJOS.map((t) => t.category))];
@@ -80,7 +81,15 @@ export default function Trabajos() {
             <h3 id="workTitle">{open.title}</h3>
             <p className="muted">{open.vehicle}</p>
             <p>{open.description}</p>
-            <a href="#agenda" className="btn btn--red btn--block" onClick={() => setOpen(null)}>Agendar un trabajo similar</a>
+            <a
+              href={waLink(`Hola, quisiera agendar un trabajo similar a: ${open.title}.`)}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn--red btn--block"
+              onClick={() => setOpen(null)}
+            >
+              Agendar un trabajo similar
+            </a>
             <button type="button" className="btn btn--ghost btn--block" onClick={() => setOpen(null)}>Cerrar</button>
           </div>
         </div>
