@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import { load, save } from '../storage.js';
+import { CONFIG, igLink } from '../config.js';
+import { InstagramIcon } from './Icons.jsx';
 
 const STORAGE_KEY = 'jsc_reviews';
 
@@ -97,6 +99,21 @@ export default function Reviews() {
               </article>
             ))}
           </div>
+        </div>
+
+        <div className="instagram-reviews card">
+          <div className="instagram-reviews__identity">
+            <InstagramIcon />
+            <div>
+              <h3>Opiniones en Instagram</h3>
+              <p className="muted">
+                Mira las publicaciones y comentarios de nuestros clientes en @{CONFIG.instagram}.
+              </p>
+            </div>
+          </div>
+          <a href={igLink()} target="_blank" rel="noopener noreferrer" className="btn btn--ghost">
+            Ver perfil y comentarios
+          </a>
         </div>
       </div>
     </section>

@@ -11,7 +11,7 @@ export default function Footer() {
           <a href={igLink()} target="_blank" rel="noopener noreferrer" aria-label="Instagram"><InstagramIcon /></a>
           <a href={mailLink()} aria-label="Correo"><MailIcon /></a>
         </div>
-        <p>© {new Date().getFullYear()} {CONFIG.name} · Taller Mecánico</p>
+        <p>© {new Date().getFullYear()} {CONFIG.name} · Taller Mecánico - Desarrollado por <a href="https://www.chgdesarrollo.cl" target="_blank" rel="noopener noreferrer">chgdesarrollo</a></p>
       </div>
     </footer>
   );

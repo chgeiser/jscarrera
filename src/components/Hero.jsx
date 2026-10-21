@@ -16,9 +16,6 @@ export default function Hero() {
           </p>
           <div className="hero__cta">
             <a href={waLink('Hola, quisiera agendar una hora.')} target="_blank" rel="noopener noreferrer" className="btn btn--red">Agendar hora</a>
-            <a href={waLink('Hola, quisiera hacer una consulta.')} target="_blank" rel="noopener noreferrer" className="btn btn--ghost">
-              Escríbenos por WhatsApp
-            </a>
           </div>
           <ul className="hero__facts">
             <li><strong>Lun – Vie</strong><span>{pad(CONFIG.openHour)}:00 – {pad(CONFIG.closeHour)}:00 hrs.</span></li>

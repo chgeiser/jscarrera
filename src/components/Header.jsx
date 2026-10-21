@@ -7,7 +7,6 @@ const LINKS = [
   ['#servicios', 'Servicios'],
   ['#trabajos', 'Trabajos'],
   [AGENDA_LINK, 'Agenda', true],
-  ['#opiniones', 'Opiniones'],
   ['#contacto', 'Contacto'],
 ];
 

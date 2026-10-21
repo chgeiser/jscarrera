@@ -12,10 +12,6 @@ export default function Contact() {
             <WhatsAppIcon />
             <div><strong>WhatsApp</strong><span>{CONFIG.whatsappLabel}</span></div>
           </a>
-          <a href={igLink()} target="_blank" rel="noopener noreferrer" className="contact__card contact__card--ig">
-            <InstagramIcon />
-            <div><strong>Instagram</strong><span>@{CONFIG.instagram}</span></div>
-          </a>
           <a href={mailLink()} className="contact__card">
             <MailIcon />
             <div><strong>Correo</strong><span>{CONFIG.email}</span></div>
